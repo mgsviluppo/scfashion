@@ -99,20 +99,70 @@
                                     </div>
                                 </div>
                             </li>
+                            
                             <li id="collezione">
                                 <div class="box1">
                                     <div class="inner">
                                         <a href="#" class="close" data-type="close"><span></span></a>
                                         <div class="wrapper tabs">
                                             <div class="col1">
-                                                <h2>Categories</h2>
+                                                <h2>Collezioni</h2>
                                                 <ul class="nav">
-                                                    <li class="selected"><a href="#Fashion"><span></span><strong>Fashion</strong></a></li>
-                                
+                                                    
+                                                    <?php
+                                                        $array_path = array();
+                                                        $dir = "images/collezioni";
+                                                        $dirs = scandir($dir);
+                                                        $i = 0;
+                                                        foreach($dirs as $entry){
+                                                            if($entry != '.' && $entry != '..'){
+                                                                if($i > 0)
+                                                                    $class = '';
+                                                                else
+                                                                    $class = 'selected';
+                                                                $array_path[$i] = array('id' => '#'.str_replace(" ", "_", $entry), 'path' => $dir.'/'.$entry, 'name' => $entry);
+                                                                echo '<li class="'.$class.'"><a href="#'.str_replace(" ", "_", $entry).'"><span></span><strong>'.$entry.'</strong></a></li>';
+                                                                $i++;
+                                                            }
+                                                        }
+                                                    ?>
                                                 </ul>
                                             </div>
                                             <div class="col2 pad_left1">
-                                                <div class="tab-content" id="Fashion">
+                                                <?php
+                                                    include "classi_php/SmartImage.class.php";
+                                                    foreach($array_path as $collection){
+                                                        $id = $collection['id'];
+                                                        $path = $collection['path'];
+                                                        $name = $collection['name'];
+                                                        echo '<div class="tab-content" id="'.$id.'">';
+                                                        echo '<h2>'.$name.'</h2>';
+                                                        echo '<div class="wrapper">';
+                                                
+                                                        $dir_photo = scandir($path.'/big');
+                                                        $i = 0;
+                                                        foreach($dir_photo as $photo){
+                                                            if($photo != '.' && $photo != '..'){
+                                                                echo '<div class="thumb-container">';
+                                                        
+                                                                if(!file_exists($path.'/thumb/thumb_'.$photo)){
+                                                                    $img = new SmartImage($path.'/big/'.$photo); 
+                                                                    $img->resize(202, 128, true); 
+                                                                    $img->saveImage($path.'/thumb/thumb_'.$photo); 
+                                                                }
+                                                                echo '<a href="'.$path.'/big/'.$photo.'" class="lightbox-image" data-type="prettyPhoto[group'.$i.']"><span></span><img src="'.$path.'/thumb/thumb_'.$photo.'" alt=""></a>';
+                                                                echo '</div>';
+                                                            }
+                                                        }
+                                                        $i++;
+                                                        echo '</div>';
+                                                        echo '</div>';
+                                                
+                                                    }
+                                                ?>
+                                                
+
+                                                <!-- <div class="tab-content" id="Fashion">
                                                     <h2>Portrait</h2>
                                                     <div class="wrapper">
                                                         <div class="thumb-container">
@@ -124,10 +174,11 @@
                                                         <div class="thumb-container">
                                                             <a href="images/big_img3.jpg" class="lightbox-image" data-type="prettyPhoto[group6]"><span></span><img src="images/page3_img3.jpg" alt=""></a>
                                                         </div>
-                                                        <div class="thumb-container"><a href="images/big_img4.jpg" class="lightbox-image" data-type="prettyPhoto[group6]"><span></span><img src="images/page3_img4.jpg" alt=""></a>
+                                                        <div class="thumb-container">
+                                                            <a href="images/big_img4.jpg" class="lightbox-image" data-type="prettyPhoto[group6]"><span></span><img src="images/page3_img4.jpg" alt=""></a>
                                                         </div>
                                                     </div>
-                                                </div>
+                                                </div> -->
                                             </div>
                                         </div>
                                     </div>
