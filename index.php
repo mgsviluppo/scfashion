@@ -120,8 +120,8 @@
                                                                     $class = '';
                                                                 else
                                                                     $class = 'selected';
-                                                                $array_path[$i] = array('id' => '#'.str_replace(" ", "_", $entry), 'path' => $dir.'/'.$entry, 'name' => $entry);
-                                                                echo '<li class="'.$class.'"><a href="#'.str_replace(" ", "_", $entry).'"><span></span><strong>'.$entry.'</strong></a></li>';
+                                                                $array_path[$i] = array('id' => 'gallery_'.str_replace(" ", "_", $entry), 'path' => $dir.'/'.$entry, 'name' => $entry);
+                                                                echo '<li class="'.$class.'"><a href="#gallery_'.str_replace(" ", "_", $entry).'"><span></span><strong>'.$entry.'</strong></a></li>';
                                                                 $i++;
                                                             }
                                                         }

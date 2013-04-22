@@ -45,12 +45,17 @@ $(window).bind('load',function() {
     
     
     $('a').click(function(){
-     if ($(this).attr('href').slice(0,1)=='#') {
+     if ($(this).attr('href').slice(0,1)=='#' && $(this).attr('href').substring(1,8) != 'gallery') {
          page='#'+$(this).attr('href').slice(1); 
          location.hash='/'+page.slice(1);
          //open_page('#'+page);
          return false;
      }
+     else{
+         page='#'+$(this).attr('href').slice(1); 
+         open_page('#'+page);
+     }
+        
      if ($(this).attr('data-type')=='close') {
          location.hash='';
          //close_page()    
