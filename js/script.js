@@ -46,7 +46,7 @@ $(document).ready(function() {
     tabs.init();
     
     // prettyPhoto
-    $("a[data-type^='prettyPhoto']").prettyPhoto({theme:'light_square'});
+    $("a[rel^='prettyPhoto']").prettyPhoto({theme:'pp_default',allow_resize: true, deeplinking:false, social_tools:'', slideshow:2500, animation_speed:'normal'});
 
     
     function initialize() {

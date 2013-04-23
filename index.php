@@ -9,7 +9,7 @@
         <link rel="stylesheet" href="css/style.css" type="text/css" media="all">
         <link rel="stylesheet" href="css/jquery.vegas.css" type="text/css" media="all">
         <script type="text/javascript" src="http://maps.google.com/maps/api/js?sensor=false"></script>
-        <script type="text/javascript" src="js/jquery-1.6.js" ></script>
+        <script type="text/javascript" src="js/jquery-1.6.1.min.js" ></script>
         <script type="text/javascript" src="js/cufon-yui.js"></script>
         <script type="text/javascript" src="js/cufon-replace.js"></script>
         <script type="text/javascript" src="js/Ubuntu_400.font.js"></script>
@@ -131,6 +131,7 @@
                                             <div class="col2 pad_left1">
                                                 <?php
                                                     include "classi_php/SmartImage.class.php";
+                                                    $i = 0;
                                                     foreach($array_path as $collection){
                                                         $id = $collection['id'];
                                                         $path = $collection['path'];
@@ -140,17 +141,17 @@
                                                         echo '<div class="wrapper">';
                                                 
                                                         $dir_photo = scandir($path.'/big');
-                                                        $i = 0;
+                                                        
                                                         foreach($dir_photo as $photo){
                                                             if($photo != '.' && $photo != '..'){
-                                                                echo '<div class="thumb-container">';
+                                                                echo '<div class="thumb-container" style="border:7px solid white">';
                                                         
                                                                 if(!file_exists($path.'/thumb/thumb_'.$photo)){
                                                                     $img = new SmartImage($path.'/big/'.$photo); 
-                                                                    $img->resize(202, 128, true); 
+                                                                    $img->resize(188, 114, true); 
                                                                     $img->saveImage($path.'/thumb/thumb_'.$photo); 
                                                                 }
-                                                                echo '<a href="'.$path.'/big/'.$photo.'" class="lightbox-image" data-type="prettyPhoto[group'.$i.']"><span></span><img src="'.$path.'/thumb/thumb_'.$photo.'" alt=""></a>';
+                                                                echo '<a href="'.$path.'/big/'.$photo.'" class="lightbox-image" rel="prettyPhoto[group'.$i.']"><span></span><img src="'.$path.'/thumb/thumb_'.$photo.'" alt=""></a>';
                                                                 echo '</div>';
                                                             }
                                                         }
