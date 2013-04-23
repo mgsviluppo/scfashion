@@ -202,15 +202,15 @@
                                         <div class="wrapper" height="600px">
                                             <div>
                                                 <h2>Contatti</h2>
-                                                <p>S.C. Fashion di Stefano Cannizzaro</p>
-                                                Via Achille Grandi 3, Ancona<br>
+                                                <p>S.C. Fashion SAS di Stefano Cannizzaro</p>
+                                                Via Achille Grandi 3, 60131 Ancona (AN)<br>
                                                 <p class="cols">
                                                     Telefono:<br>
                                                     Fax:<br>
                                                     Email:
                                                 </p>
                                                 <p>
-                                                    +1 959 603 6035<br>
+                                                    071-2917875<br>
                                                     +1 504 889 9898<br>
                                                     <a href="mailto:" class="link1">mail@stefanocannizzaro.com</a>
                                                 </p>

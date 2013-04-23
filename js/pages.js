@@ -69,7 +69,7 @@ $(window).bind('load',function() {
          }
      })
      fl=false;
-     $('#content').stop().animate({height:'868',opacity:0.9})
+     $('#content').stop().animate({height:'868'}) //opacity:0.9
      if (act!='') {
          $(act).find('.box1').stop().animate({height:'0'},700,'easeOutCirc', function(){
              $(act).css({display:'none'});
