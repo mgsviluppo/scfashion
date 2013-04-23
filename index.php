@@ -56,7 +56,17 @@
                             <li id="home">
                                 <div class="box1">
                                     <div class="inner">
-                                        <a href="#" class="close" data-type="close"><span></span></a>
+                                        <h2>Mission</h2>
+                                        <p>Come testimonia il marchio rappresentato dalla vela sulle onde il mare è da sempre un elemento importante del mondo NAVIGARE. Il mare come sinonimo di tranquillità e pace, ma allo stesso tempo sportività e dinamismo. Così l'abbigliamento Navigare è destinato alle persone che amano vestire in modo elegante pur avendo a disposizione un prodotto sportivo adatto ad ogni situazione.
+
+                                        Questo pensiero è stato trasmesso non solo all'abbigliamento maschile ma anche all' abbigliamento femminile e da bambino.
+
+                                        Inoltre NAVIGARE ha firmato altri oggetti, per soddisfare tutti coloro che apprezzano la linea abbigliamento, desiderano crearsi un look completo Navigare, grazie a prodotti, con le stesse caratteristiche di qualità e design. Sono nati così l'intimo uomo, i profumi, la pelletteria, gli ombrelli e gli articoli in spugna.
+
+                                        Tutto questo unito con l'amore per il mare e per il tempo libero vissuto con stile ed eleganza in ogni momento rappresenta il MONDO NAVIGARE, che da sempre non è solamente UN MODO DI VESTIRE... ma anche e sopratutto UN MODO DI ESSERE.
+
+                                        Per entrare nel mondo Navigare, scoprite le collezioni, diventate fan di Facebook, ma allo stesso tempo inviateci le vostre opinioni e richieste di informazioni.</p>
+                                        <!-- <a href="#" class="close" data-type="close"><span></span></a>
                                         <div class="wrapper pad_bot1">
                                             <div class="col1">
                                                 <h2>Shortly About Me</h2>
@@ -95,7 +105,7 @@
                                             <li><a href="#">Necessitatibus saepe eveniet ut et voluptates repudiandae sint et molestiae</a></li>
                                             <li><a href="#">Gon recusandae. Itaque earum rerum hic tenetur a sapiente delectus</a></li>
                                         </ul>
-                                        <a href="#!/page_More" class="button1"><span></span><strong>Read More</strong></a>
+                                        <a href="#!/page_More" class="button1"><span></span><strong>Read More</strong></a> -->
                                     </div>
                                 </div>
                             </li>
@@ -191,25 +201,22 @@
                                         <a href="#" class="close" data-type="close"><span></span></a>
                                         <div class="wrapper" height="600px">
                                             <div>
-                                                <h2>Contact Info</h2>
-                                                <p>Thom Sander</p>
-                                                8901 Marmora Road, Glasgow, D04 89GR<br>
-                                                <p class="cols">Telephone:<br>
-                                                        Fax:<br>
-                                                        Email:</p>
-                                                <p>+1 959 603 6035<br>
-                                                        +1 504 889 9898<br>
-                                                        <a href="mailto:" class="link1">mail@thomsander.com</a></p>
-                                                9863 Mill Road, Cambridge, MG09 99HT<br>
-                                                <p class="cols">Telephone:<br>
-                                                        Fax:<br>
-                                                        Email:</p>
-                                                <p>+1 959 603 6035<br>
-                                                        +1 504 889 9898<br>
-                                                        <a href="mailto:" class="link1">mail@thomsander.com</a></p>
+                                                <h2>Contatti</h2>
+                                                <p>S.C. Fashion di Stefano Cannizzaro</p>
+                                                Via Achille Grandi 3, Ancona<br>
+                                                <p class="cols">
+                                                    Telefono:<br>
+                                                    Fax:<br>
+                                                    Email:
+                                                </p>
+                                                <p>
+                                                    +1 959 603 6035<br>
+                                                    +1 504 889 9898<br>
+                                                    <a href="mailto:" class="link1">mail@stefanocannizzaro.com</a>
+                                                </p>
                                             </div>
                                             <div style="display:block;text-align:center">
-                                                <h2>Our Location</h2>
+                                                <h2>Rivenditori</h2>
                                                 <center><div id="map" style="width:600px; height:400px"></div></center>
                                             </div>
                                         </div>
