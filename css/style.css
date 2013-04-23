@@ -126,7 +126,7 @@ h1 {
     padding: 48px 0 0 0
 }
 h2 {
-    font-size: 26px;
+    font-size: 18px;
     line-height: 1.2em;
     padding: 17px 0 20px 0;
     color: #fff;
@@ -137,7 +137,7 @@ p {
 }
 /* ============================= header ====================== */
 header {
-    width: 360px;
+    width: 320px;
     float: left
 }
 #logo {
@@ -224,9 +224,9 @@ header {
     width: 100%;
     height: 100%
 }
-.pad_left1 {
+/*.pad_left1 {
     padding-left: 60px
-}
+}*/
 .pad_bot1 {
     padding-bottom: 25px
 }
@@ -327,7 +327,7 @@ header {
 }
 .tabs .nav li a {
     position: relative;
-    font-size: 16px;
+    font-size: 13px;
     letter-spacing: -1px;
     text-transform: uppercase;
     text-decoration: none;
