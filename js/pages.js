@@ -51,10 +51,6 @@ $(window).bind('load',function() {
          //open_page('#'+page);
          return false;
      }
-     else{
-         page='#'+$(this).attr('href').slice(1); 
-         open_page('#'+page);
-     }
         
      if ($(this).attr('data-type')=='close') {
          location.hash='';

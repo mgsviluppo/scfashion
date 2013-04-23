@@ -41,7 +41,7 @@ body {
 /* Global Structure ============================================================= */
 .main {
     margin: 0 auto;
-    width: 1100px
+    width: 1150px
 }
 .bg_spinner {
     width: 100px;
@@ -192,7 +192,7 @@ header {
 
 #content {
     height: 868px;
-    width: 740px;
+    width: 825px;
     float: left;
     position: relative
 }
