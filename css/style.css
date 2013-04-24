@@ -138,9 +138,9 @@ p {
 }
 /* ============================= header ====================== */
 header {
-    width: 320px;
-    float: left
-}
+/*    width: 320px;
+*//*    float: left
+*/}
 #logo {
     display: block;
     text-indent: -9999px;
@@ -152,8 +152,8 @@ header {
     padding-top: 122px
 }
 #menu > li {
-    width: 100%;
-    overflow: hidden;
+/*    width: 100%;
+*/    overflow: hidden;
     padding-bottom: 4px
 }
 #menu > li > a {
@@ -193,16 +193,16 @@ header {
 
 #content {
     height: 868px;
-    width: 825px;
-    float: left;
-    position: relative
+    width: 75%;
+/*    float: left;
+*/    position: relative
 }
 #content > ul > li {
     position: relative;
     height: 868px;
     width: 100%;
-    bottom: 0
-}
+/*    bottom: 0
+*/}
 .box1 {
     background: #001A3D;
 }

@@ -40,20 +40,19 @@
                 <div class="box">
 <!-- header -->
                     <header>
-                        <h1><a href="index.html" id="logo">MGSviluppo Portfolio</a></h1>
-                        <nav>
+                        <div id="logo" style="display:inline-block;width:300px;float:left"><a href="index.html" id="logo">MGSviluppo Portfolio</a></div>
+                        <div style="float:left;margin-top:-80px">
                             <ul id="menu">
-                                <li><a href="#home"><span></span><strong>Home Page</strong></a></li>
-                                <li><a href="#collezione"><span></span><strong>Collezioni</strong></a></li>
-                                <li><a href="#contact"><span></span><strong>Contatti</strong></a></li>
+                                <li style="float:left;display:inline-block"><a href="#home"><span></span><strong>Home Page</strong></a></li>
+                                <li style="float:left;display:inline-block"><a href="#collezione"><span></span><strong>Collezioni</strong></a></li>
+                                <li style="float:left;display:inline-block"><a href="#contact"><span></span><strong>Contatti</strong></a></li>
                             </ul>
-                        </nav>
+                        </div>
                     </header>
 <!--content -->
-                    <article id="content">
-                        <div class="ic">More Website Templates @ TemplateMonster.com -September 19th, 2011!</div>
+                    <article id="content" style="display:inline-block;margin-left:300px">
                         <ul>
-                            <li id="home">
+                            <li id="home" style="bottom:none;height:400px">
                                 <div class="box1">
                                     <div class="inner">
                                         <h2>Mission</h2>
@@ -110,7 +109,7 @@
                                 </div>
                             </li>
                             
-                            <li id="collezione">
+                            <li id="collezione" style="opacity:0.8;width:1075px !important;margin-left:-231px">
                                 <div class="box1">
                                     <div class="inner">
                                         <a href="#" class="close" data-type="close"><span></span></a>

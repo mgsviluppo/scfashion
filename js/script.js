@@ -11,7 +11,9 @@ $(document).ready(function() {
             { src:'images/bg1.jpg', fade:1000 },
             { src:'images/bg2.jpg', fade:1000 },
             { src:'images/bg3.jpg', fade:1000 }
-        ]
+        ],
+        delay:10000,
+        preload:true
     })('overlay', {
         src:'images/overlays/02.png',
         opacity:0.7
