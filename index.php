@@ -206,7 +206,7 @@
                                 <div class="box1">
                                     <div class="inner">
                                         <div class="wrapper" height="600px">
-											<h1>UNDER COSTRUCTOR</h1>
+											<h1>COMING SOON</h1>
                                         </div>
                                     </div>
                                 </div>
