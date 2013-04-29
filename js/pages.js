@@ -1,6 +1,11 @@
 $(window).bind('load',function() {	
     var act='';
     
+    if(this.location.hash.slice(2) == 'collezione')
+       $('#content').attr('style','width:100%; margin-left:0px');
+    else
+       $('#content').attr('style','width:75%');
+    
     $('#content > ul > li').css({position:'absolute', display:'none'});
     $('#content > ul > li').find('.box1').css({height:'0'})
     
@@ -38,9 +43,6 @@ $(window).bind('load',function() {
             open_page('#'+page);
             return false;
         }
-        if ($(this).attr('data-type')=='close') {
-            close_page()    
-        } 
     });
     
     
@@ -51,43 +53,46 @@ $(window).bind('load',function() {
          //open_page('#'+page);
          return false;
      }
-        
-     if ($(this).attr('data-type')=='close') {
-         location.hash='';
-         //close_page()    
-     }
     })
     function open_page(page){
-     // location.hash='/'+page.slice(1);
-     $('#menu a').removeClass('active').find(' > span').stop().animate({opacity:'0'},600);
-     Cufon.replace('#menu a', { fontFamily: 'Ubuntu', hover:true });
-     num=$(page).data('num');
-     $('#menu > li').each(function(){                      
+        // location.hash='/'+page.slice(1);
+        $('#menu a').removeClass('active').find(' > span').stop().animate({opacity:'0'},600);
+        Cufon.replace('#menu a', { fontFamily: 'Ubuntu', hover:true });
+        num=$(page).data('num');
+        $('#menu > li').each(function(){                      
          if ($(this).data('num')==num) {
              $(this).find('> a').addClass('active').find('> span').stop().animate({opacity:'1'},600);
              Cufon.replace('#menu a', { fontFamily: 'Ubuntu', hover:true });
          }
-     })
-     fl=false;
-     $('#content').stop().animate({height:'868'}) //opacity:0.9
-     if (act!='') {
-         $(act).find('.box1').stop().animate({height:'0'},700,'easeOutCirc', function(){
-             $(act).css({display:'none'});
-             $(page).css({display:'block'}).find('.box1').stop().animate({height:'100%'},700, 'easeOutCirc', function(){
-                 act=page;   
-             }); 
-         })
-     } else {
-         $(page).css({display:'block'}).find('.box1').stop().animate({height:'100%'},700, 'easeOutCirc', function(){
-             act=page;   
-         });     
-     }
+        })
+        fl=false;
+        $('#content').stop().animate({height:'868'}) //opacity:0.9
+        if (act!='') {
+             $(act).find('.box1').stop().animate({height:'0'},500, function(){
+                 $(act).css({display:'none'});
+                 if(page == '#collezione')
+                    $('#content').attr('style','width:100%; margin-left:0px');
+                 else
+                    $('#content').attr('style','width:75%');
+                 $(page).css({display:'block'}).find('.box1').stop().animate({height:'100%'},500, function(){
+                     act=page;   
+                 }); 
+             })
+        } else {
+                if(page == '#collezione')
+                   $('#content').attr('style','width:100%; margin-left:0px');
+                else
+                   $('#content').attr('style','width:75%');
+             $(page).css({display:'block'}).find('.box1').stop().animate({height:'100%'},500, function(){
+                 act=page; 
+             });     
+        }
     }
     function close_page(page){
      $('#menu a').removeClass('active').find(' > span').stop().animate({opacity:'0'},600);
      Cufon.replace('#menu a', { fontFamily: 'Ubuntu', hover:true });
      //location.hash='';
-     $(act).find('.box1').stop().animate({height:'0'},700,'easeOutCirc', function(){
+     $(act).find('.box1').stop().animate({height:'0'},500, function(){
          $(act).css({display:'none'});
          act='';
          fl=true;

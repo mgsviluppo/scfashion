@@ -46,11 +46,12 @@
                                 <li style="float:left;display:inline-block"><a href="#home"><span></span><strong>Home Page</strong></a></li>
                                 <li style="float:left;display:inline-block"><a href="#collezione"><span></span><strong>Collezioni</strong></a></li>
                                 <li style="float:left;display:inline-block"><a href="#contact"><span></span><strong>Contatti</strong></a></li>
+								<li style="float:left;display:inline-block"><a href="#rivenditori"><span></span><strong>Rivenditori</strong></a></li>
                             </ul>
                         </div>
                     </header>
 <!--content -->
-                    <article id="content" style="display:inline-block;margin-left:300px">
+                    <article id="content">
                         <ul>
                             <li id="home" style="bottom:none;height:400px">
                                 <div class="box1">
@@ -109,10 +110,9 @@
                                 </div>
                             </li>
                             
-                            <li id="collezione" style="opacity:0.8;width:1075px !important;margin-left:-231px">
+                            <li id="collezione">
                                 <div class="box1">
                                     <div class="inner">
-                                        <a href="#" class="close" data-type="close"><span></span></a>
                                         <div class="wrapper tabs">
                                             <div class="col1">
                                                 <h2>Collezioni</h2>
@@ -137,7 +137,7 @@
                                                     ?>
                                                 </ul>
                                             </div>
-                                            <div class="col2 pad_left1">
+                                            <div class="col3 pad_left1">
                                                 <?php
                                                     include "classi_php/SmartImage.class.php";
                                                     $i = 0;
@@ -152,7 +152,7 @@
                                                         $dir_photo = scandir($path.'/big');
                                                         
                                                         foreach($dir_photo as $photo){
-                                                            if($photo != '.' && $photo != '..'){
+                                                            if(strncmp($photo, '.', strlen('.'))){
                                                                 echo '<div class="thumb-container" style="border:7px solid white">';
                                                         
                                                                 if(!file_exists($path.'/thumb/thumb_'.$photo)){
@@ -170,25 +170,6 @@
                                                 
                                                     }
                                                 ?>
-                                                
-
-                                                <!-- <div class="tab-content" id="Fashion">
-                                                    <h2>Portrait</h2>
-                                                    <div class="wrapper">
-                                                        <div class="thumb-container">
-                                                            <a href="images/big_img1.jpg" class="lightbox-image" data-type="prettyPhoto[group6]"><span></span><img src="images/page3_img1.jpg" alt=""></a>
-                                                        </div>
-                                                        <div class="thumb-container">
-                                                            <a href="images/big_img2.jpg" class="lightbox-image" data-type="prettyPhoto[group6]"><span></span><img src="images/page3_img2.jpg" alt=""></a>
-                                                        </div>
-                                                        <div class="thumb-container">
-                                                            <a href="images/big_img3.jpg" class="lightbox-image" data-type="prettyPhoto[group6]"><span></span><img src="images/page3_img3.jpg" alt=""></a>
-                                                        </div>
-                                                        <div class="thumb-container">
-                                                            <a href="images/big_img4.jpg" class="lightbox-image" data-type="prettyPhoto[group6]"><span></span><img src="images/page3_img4.jpg" alt=""></a>
-                                                        </div>
-                                                    </div>
-                                                </div> -->
                                             </div>
                                         </div>
                                     </div>
@@ -197,7 +178,6 @@
                             <li id="contact">
                                 <div class="box1">
                                     <div class="inner">
-                                        <a href="#" class="close" data-type="close"><span></span></a>
                                         <div class="wrapper" height="600px">
                                             <div>
                                                 <h2>Contatti</h2>
@@ -215,9 +195,18 @@
                                                 </p>
                                             </div>
                                             <div style="display:block;text-align:center">
-                                                <h2>Rivenditori</h2>
+                                                <h2>Mappa</h2>
                                                 <center><div id="map" style="width:600px; height:400px"></div></center>
                                             </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                            <li id="rivenditori">
+                                <div class="box1">
+                                    <div class="inner">
+                                        <div class="wrapper" height="600px">
+											<h1>UNDER COSTRUCTOR</h1>
                                         </div>
                                     </div>
                                 </div>
