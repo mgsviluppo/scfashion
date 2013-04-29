@@ -142,8 +142,11 @@ p {
     display: block;
     text-indent: -9999px;
     background: url(../images/logo.png) 0 0 no-repeat;
-    width: 280px;
-    height: 153px
+    width: 250px;
+    height: 140px;
+    margin-left:50px;
+    margin-top:15px;
+    background-size:180px 112px;
 }
 #menu {
     padding-top: 122px
@@ -177,7 +180,7 @@ p {
 #menu > li > a strong {
     position: relative;
     display: block;
-    padding: 0 40px 0 40px;
+    padding: 0 45px 0 40px;
     height: 56px
 }
 #menu > li > a:hover, #menu > li > a.active {
@@ -408,7 +411,7 @@ footer a:hover {
     width: 111px;
     height: 45px;
     text-indent: -9999px;
-    margin-right: 22px
+    margin-right: 22px;
 }
 /* ============================= forms ============================= */
 #ContactForm {

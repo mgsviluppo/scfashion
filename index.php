@@ -40,7 +40,7 @@
                 <div class="box">
 <!-- header -->
                     <header>
-                        <div id="logo" style="display:inline-block;width:300px;float:left"><a href="index.html" id="logo">MGSviluppo Portfolio</a></div>
+                        <div id="logo" style="display:inline-block;float:left"><a href="index.html">MGSviluppo Portfolio</a></div>
                         <div style="float:left;margin-top:-80px">
                             <ul id="menu">
                                 <li style="float:left;display:inline-block"><a href="#home"><span></span><strong>Home Page</strong></a></li>
