@@ -14,7 +14,6 @@ mark, rp, rt, ruby, summary, time {
 }
 .wrapper {
     width: 100%;
-    overflow: auto;
 }
 /* Global properties ======================================================== */
 body {
@@ -77,6 +76,7 @@ body, html {
 }
 .bg1 {
     background:rgba(0,26,61,0.7); 
+    -ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorstr=#bb001A3D, endColorstr=#bb001A3D)";
 /*    background: #001A3D;*/
     position: relative;
     z-index: 1;
@@ -205,6 +205,8 @@ p {
 */}
 .box1 {
     background:rgba(0,26,61,0.7); 
+    -ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorstr=#bb001A3D, endColorstr=#bb001A3D)";
+    
 /*    background: #001A3D;*/
 }
 .inner {
