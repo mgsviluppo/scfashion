@@ -21,10 +21,10 @@ $(document).ready(function() {
     
     
     
-    $('.close span, .button1 span, .tabs .nav li a span, .lightbox-image span ').css({opacity:'0'})
+    $('.button1 span, .tabs .nav li a span, .lightbox-image span ').css({opacity:'0'})
     $('.tabs .nav .selected a span').css({opacity:'1'})
     
-    $('.close, .button1').hover(function(){
+    $('.button1').hover(function(){
         $(this).find('span').stop().animate({opacity:'1'})                          
     }, function(){
         $(this).find('span').stop().animate({opacity:'0'})                          
@@ -48,7 +48,7 @@ $(document).ready(function() {
     tabs.init();
     
     // prettyPhoto
-    $("a[rel^='prettyPhoto']").prettyPhoto({theme:'pp_default',allow_resize: true, deeplinking:false, social_tools:'', slideshow:2500, animation_speed:'normal'});
+    $("a[rel^='prettyPhoto']").prettyPhoto({theme:'pp_default',allow_resize: true, deeplinking:false, social_tools:'', slideshow:3000, animation_speed:'normal'});
 
     
     function initialize() {
