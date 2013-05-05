@@ -43,10 +43,10 @@
                         <div id="logo" style="display:inline-block;float:left"><a href="index.html">MGSviluppo Portfolio</a></div>
                         <div style="float:left;margin-top:-80px">
                             <ul id="menu">
-                                <li style="float:left;display:inline-block"><a href="#home"><span></span><strong>Home Page</strong></a></li>
-                                <li style="float:left;display:inline-block"><a href="#collezione"><span></span><strong>Collezioni</strong></a></li>
-                                <li style="float:left;display:inline-block"><a href="#contact"><span></span><strong>Contatti</strong></a></li>
-								<li style="float:left;display:inline-block"><a href="#rivenditori"><span></span><strong>Rivenditori</strong></a></li>
+                                <li style="float:left;display:inline-block"><a class="menu_link" href="#home"><div class="button_menu_out"><div class="button_menu_in"><strong>Home Page</strong></div></div></a></li>
+                                <li style="float:left;display:inline-block"><a href="#collezione"><div class="button_menu_out"><div class="button_menu_in"><a class="menu_link" href="#collezione"><strong>Collezioni</strong></div></div></a></li>
+                                <li style="float:left;display:inline-block"><a href="#contact"><div class="button_menu_out"><div class="button_menu_in"><a class="menu_link" href="#contact"><strong>Contatti</strong></div></div></a></li>
+								<li style="float:left;display:inline-block"><a href="#rivenditori"><div class="button_menu_out"><div class="button_menu_in"><a class="menu_link" href="#rivenditori"><strong>Rivenditori</strong></div></div></a></li>
                             </ul>
                         </div>
                     </header>
@@ -54,7 +54,7 @@
                     <article id="content">
                         <ul>
                             <li id="home" style="bottom:none;height:400px">
-                                <div class="box1">
+                                <div class="box1_out"><div class="box1">
                                     <div class="inner">
                                         <h2>Mission</h2>
                                         <p>Come testimonia il marchio rappresentato dalla vela sulle onde il mare è da sempre un elemento importante del mondo NAVIGARE. Il mare come sinonimo di tranquillità e pace, ma allo stesso tempo sportività e dinamismo. Così l'abbigliamento Navigare è destinato alle persone che amano vestire in modo elegante pur avendo a disposizione un prodotto sportivo adatto ad ogni situazione.
@@ -66,52 +66,12 @@
                                         Tutto questo unito con l'amore per il mare e per il tempo libero vissuto con stile ed eleganza in ogni momento rappresenta il MONDO NAVIGARE, che da sempre non è solamente UN MODO DI VESTIRE... ma anche e sopratutto UN MODO DI ESSERE.
 
                                         Per entrare nel mondo Navigare, scoprite le collezioni, diventate fan di Facebook, ma allo stesso tempo inviateci le vostre opinioni e richieste di informazioni.</p>
-                                        <!-- <a href="#" class="close" data-type="close"><span></span></a>
-                                        <div class="wrapper pad_bot1">
-                                            <div class="col1">
-                                                <h2>Shortly About Me</h2>
-                                                <figure><img src="images/page1_img1.jpg" alt="" class="pad_bot1"></figure>
-                                                <p class="pad_bot1">Photographer’s Portfolio is one of <a href="http://blog.templatemonster.com/free-website-templates/" target="_blank">free web templates</a> created by TemplateMonster.com team, optimized for 1280X1024 screen res.</p>
-                                                <a href="#!/page_More" class="button1"><span></span><strong>Read More</strong></a>
-                                            </div>
-                                            <div class="col1 pad_left1">
-                                                <h2>What’s New</h2>
-                                                <div class="wrapper">
-                                                    <span class="date"><strong>25</strong><span>sept</span></span>
-                                                    <div class="col2">
-                                                        <p class="pad_bot2 color1"><strong>Vero eos accusamus</strong></p>
-                                                        <p>This <a href="http://blog.templatemonster.com/2011/09/19/free-website-template-full-js-photography/">Photographer’s Portfolio Template</a> goes with 2 packages– with PSD files (available for regi- stered members) &amp; without them.</p>
-                                                    </div>
-                                                </div>
-                                                <div class="wrapper">
-                                                    <span class="date"><strong>22</strong><span>sept</span></span>
-                                                    <div class="col2">
-                                                        <p class="pad_bot2 color1"><strong>Excepturi sint occaecati</strong></p>
-                                                        <p class="pad_bot1">This template has several pages: <a href="#!/page_Home">Home Page</a>, <a href="#!/page_About">About</a>, <a href="#!/page_Portfolio">Portfolio</a>, <a href="#!/page_Services">My Services</a>, <a href="#!/page_Contact">Contact</a> (note that contact us form – doesn’t work).</p>
-                                                    </div>
-                                                </div>
-                                                <a href="#!/page_More" class="button1"><span></span><strong>Read More</strong></a>
-                                            </div>
-                                        </div>
-                                        <h2>My Services</h2>
-                                        <div class="wrapper">
-                                            <figure class="left marg_right1"><img src="images/page1_img2.jpg" alt=""></figure>
-                                            <p class="color1 pad_bot2"><strong>Dereos accusamus dignis simos</strong></p>
-                                            <p>Ducimus blanditiis praesentium voluatum molestias excepturi sint occaecati cupiditate non provident, similique sunt in culpa qui officia deserunt mollitia animimolestiae non recusandae. Itaque earum rerum hic tenetur a sapiente delectus, ut aut reiciendis voluptatibus maiores alias consequatur a, id est laborum et dolorum fuga.</p>
-                                        </div>
-                                        <p class="color1 pad_bot3">Nobis est eligendi optio cumque nihil impedit quo minus id quod maxime placeat facere possimus, omnis voluptas assumenda est, omnis dolor repellendus:</p>
-                                        <ul class="list1 pad_bot1">
-                                            <li><a href="#">Temporibus autem quibusdam et aut officiis debitis aut rerum</a></li>
-                                            <li><a href="#">Necessitatibus saepe eveniet ut et voluptates repudiandae sint et molestiae</a></li>
-                                            <li><a href="#">Gon recusandae. Itaque earum rerum hic tenetur a sapiente delectus</a></li>
-                                        </ul>
-                                        <a href="#!/page_More" class="button1"><span></span><strong>Read More</strong></a> -->
                                     </div>
-                                </div>
+                                </div></div>
                             </li>
                             
                             <li id="collezione">
-                                <div class="box1">
+                                <div class="box1_out"><div class="box1">
                                     <div class="inner">
                                         <div class="wrapper tabs">
                                             <div class="col1">
@@ -173,10 +133,10 @@
                                             </div>
                                         </div>
                                     </div>
-                                </div>
+                                </div></div>
                             </li>
                             <li id="contact">
-                                <div class="box1">
+                                <div class="box1_out"><div class="box1">
                                     <div class="inner">
                                         <div class="wrapper" height="600px">
                                             <div>
@@ -200,16 +160,16 @@
                                             </div>
                                         </div>
                                     </div>
-                                </div>
+                                </div></div>
                             </li>
                             <li id="rivenditori">
-                                <div class="box1">
+                                <div class="box1_out"><div class="box1">
                                     <div class="inner">
                                         <div class="wrapper" height="600px">
 											<h1>COMING SOON</h1>
                                         </div>
                                     </div>
-                                </div>
+                                </div></div>
                             </li>
                             <li id="page_More">
                                 <div class="box1">

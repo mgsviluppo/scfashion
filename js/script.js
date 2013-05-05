@@ -15,7 +15,7 @@ $(document).ready(function() {
         delay:10000,
         preload:true
     })('overlay', {
-        src:'images/overlays/02.png',
+        src:'images/overlays/06.png',
         opacity:0.7
     });
     
@@ -50,7 +50,6 @@ $(document).ready(function() {
     // prettyPhoto
     $("a[rel^='prettyPhoto']").prettyPhoto({theme:'pp_default',allow_resize: true, deeplinking:false, social_tools:'', slideshow:3000, animation_speed:'normal'});
 
-    
     function initialize() {
         lat = 0;
         lng = 0;
@@ -87,4 +86,5 @@ $(document).ready(function() {
     }
 
     initialize();
+
  });
