@@ -54,20 +54,22 @@
                     <article id="content">
                         <ul>
                             <li id="home" style="bottom:none;height:400px">
-                                <div class="box1_out"><div class="box1">
-                                    <div class="inner">
-                                        <h2>Mission</h2>
-                                        <p>Come testimonia il marchio rappresentato dalla vela sulle onde il mare è da sempre un elemento importante del mondo NAVIGARE. Il mare come sinonimo di tranquillità e pace, ma allo stesso tempo sportività e dinamismo. Così l'abbigliamento Navigare è destinato alle persone che amano vestire in modo elegante pur avendo a disposizione un prodotto sportivo adatto ad ogni situazione.
+                                <div class="box1_out">
+									<div class="box1">
+                                    	<div class="inner">
+	                                        <h2>Mission</h2>
+	                                        <p>Come testimonia il marchio rappresentato dalla vela sulle onde il mare è da sempre un elemento importante del mondo NAVIGARE. Il mare come sinonimo di tranquillità e pace, ma allo stesso tempo sportività e dinamismo. Così l'abbigliamento Navigare è destinato alle persone che amano vestire in modo elegante pur avendo a disposizione un prodotto sportivo adatto ad ogni situazione.
 
-                                        Questo pensiero è stato trasmesso non solo all'abbigliamento maschile ma anche all' abbigliamento femminile e da bambino.
+	                                        Questo pensiero è stato trasmesso non solo all'abbigliamento maschile ma anche all' abbigliamento femminile e da bambino.
 
-                                        Inoltre NAVIGARE ha firmato altri oggetti, per soddisfare tutti coloro che apprezzano la linea abbigliamento, desiderano crearsi un look completo Navigare, grazie a prodotti, con le stesse caratteristiche di qualità e design. Sono nati così l'intimo uomo, i profumi, la pelletteria, gli ombrelli e gli articoli in spugna.
+	                                        Inoltre NAVIGARE ha firmato altri oggetti, per soddisfare tutti coloro che apprezzano la linea abbigliamento, desiderano crearsi un look completo Navigare, grazie a prodotti, con le stesse caratteristiche di qualità e design. Sono nati così l'intimo uomo, i profumi, la pelletteria, gli ombrelli e gli articoli in spugna.
 
-                                        Tutto questo unito con l'amore per il mare e per il tempo libero vissuto con stile ed eleganza in ogni momento rappresenta il MONDO NAVIGARE, che da sempre non è solamente UN MODO DI VESTIRE... ma anche e sopratutto UN MODO DI ESSERE.
+	                                        Tutto questo unito con l'amore per il mare e per il tempo libero vissuto con stile ed eleganza in ogni momento rappresenta il MONDO NAVIGARE, che da sempre non è solamente UN MODO DI VESTIRE... ma anche e sopratutto UN MODO DI ESSERE.
 
-                                        Per entrare nel mondo Navigare, scoprite le collezioni, diventate fan di Facebook, ma allo stesso tempo inviateci le vostre opinioni e richieste di informazioni.</p>
-                                    </div>
-                                </div></div>
+	                                        Per entrare nel mondo Navigare, scoprite le collezioni, diventate fan di Facebook, ma allo stesso tempo inviateci le vostre opinioni e richieste di informazioni.</p>
+	                                    </div>
+                                	</div>
+								</div>
                             </li>
                             
                             <li id="collezione">
@@ -131,6 +133,7 @@
                                                     }
                                                 ?>
                                             </div>
+											<div style='clear:both'></div>
                                         </div>
                                     </div>
                                 </div></div>

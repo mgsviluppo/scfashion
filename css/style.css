@@ -217,8 +217,8 @@ p {
     border:3px solid #FEDC36;
     -webkit-box-shadow: inset 0px 0px 10px 0px rgba(0, 0, 0, 1);
     box-shadow: inset 0px 0px 10px 0px rgba(0, 0, 0, 1);
-/*    height:98.5%;
-*/}
+    display:block;
+}
 .inner {
     padding: 25px 55px 25px 60px;
     position: relative
