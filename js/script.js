@@ -49,8 +49,26 @@ $(document).ready(function() {
     
     // prettyPhoto
     $("a[rel^='prettyPhoto']").prettyPhoto({theme:'pp_default',allow_resize: true, deeplinking:false, social_tools:'', slideshow:3000, animation_speed:'normal'});
-
+    
+    function loadXMLDoc(dname)
+    {
+        var xml = ''
+        $.ajax({
+            type: "GET",
+            async: false,
+            url: "rappresentanti.xml",
+            dataType: "xml",
+            success: function(result) {
+                xml = result;
+            }
+        });
+        return xml
+    }
+    
     function initialize() {
+        var xml = loadXMLDoc('rappresentanti.xml');
+
+        debugger;
         lat = 0;
         lng = 0;
         var input_address = "Via achille grandi,3,ancona";  
@@ -62,13 +80,16 @@ $(document).ready(function() {
 
                 // fornisce latitudine e longitudine
                 var latlng = new google.maps.LatLng(lat,lng);
-
+                
+                var infowindow = new google.maps.InfoWindow({content: 'asdsadsa'});
+                
                 var marker = new google.maps.Marker({ position: latlng,
                                                       map: map, 
                                                       title: 'Questo è un testo di suggerimento' });
-
-                }  
-            else {  
+                google.maps.event.addListener(marker, 'click', function() {
+                                                                    infowindow.open(map,marker);
+                                                                });  
+            }else {  
                 alert("Google Maps not found address!");  
                 }  
             });
@@ -82,6 +103,7 @@ $(document).ready(function() {
 
             // crea l'oggetto mappa
             var map = new google.maps.Map(document.getElementById('map'), options);
+            var map = new google.maps.Map(document.getElementById('map2'), options);
 
     }
 
