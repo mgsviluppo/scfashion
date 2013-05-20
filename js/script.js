@@ -50,49 +50,25 @@ $(document).ready(function() {
     // prettyPhoto
     $("a[rel^='prettyPhoto']").prettyPhoto({theme:'pp_default',allow_resize: true, deeplinking:false, social_tools:'', slideshow:3000, animation_speed:'normal'});
     
-    function loadXMLDoc(dname)
-    {
-        var xml = ''
+    function loadRappresentanti(dname){
+        var rappresentanti = []
         $.ajax({
             type: "GET",
             async: false,
             url: "rappresentanti.xml",
             dataType: "xml",
-            success: function(result) {
-                xml = result;
+            success: function(xml) {
+                rappresentanti = xml.childNodes.item().childNodes
             }
         });
-        return xml
+        return rappresentanti
     }
     
     function initialize() {
-        var xml = loadXMLDoc('rappresentanti.xml');
+        var rappresentanti = loadRappresentanti('rappresentanti.xml');
 
-        debugger;
-        lat = 0;
-        lng = 0;
-        var input_address = "Via achille grandi,3,ancona";  
-        var geocoder = new google.maps.Geocoder();  
-        geocoder.geocode( { address: input_address }, function(results, status) {  
-            if (status == google.maps.GeocoderStatus.OK) {  
-                lat = results[0].geometry.location.lat();  
-                lng = results[0].geometry.location.lng();  
+             
 
-                // fornisce latitudine e longitudine
-                var latlng = new google.maps.LatLng(lat,lng);
-                
-                var infowindow = new google.maps.InfoWindow({content: 'asdsadsa'});
-                
-                var marker = new google.maps.Marker({ position: latlng,
-                                                      map: map, 
-                                                      title: 'Questo è un testo di suggerimento' });
-                google.maps.event.addListener(marker, 'click', function() {
-                                                                    infowindow.open(map,marker);
-                                                                });  
-            }else {  
-                alert("Google Maps not found address!");  
-                }  
-            });
 
             var latlng = new google.maps.LatLng(42.924252,13.425293);
             // imposta le opzioni di visualizzazione
@@ -103,10 +79,67 @@ $(document).ready(function() {
 
             // crea l'oggetto mappa
             var map = new google.maps.Map(document.getElementById('map'), options);
-            var map = new google.maps.Map(document.getElementById('map2'), options);
-
+            var map2 = new google.maps.Map(document.getElementById('map2'), options);
+            
+            
+            for (var i=0;i<rappresentanti.length;i++){
+                 addRappresentante(map2, rappresentanti[i])
+            }
+            
     }
 
     initialize();
 
  });
+ 
+ 
+ function addRappresentante(map, rappresentante){
+     
+     lat = 0;
+     lng = 0;
+
+     var input_address = rappresentante.attributes["indirizzo"].textContent;  
+     var geocoder = new google.maps.Geocoder();  
+     geocoder.geocode( { address: input_address }, function(results, status) {  
+         if (status == google.maps.GeocoderStatus.OK) {  
+             lat = results[0].geometry.location.lat();  
+             lng = results[0].geometry.location.lng();  
+
+             // fornisce latitudine e longitudine
+             var latlng = new google.maps.LatLng(lat,lng);
+             
+             var marker = new google.maps.Marker({ position: latlng,
+                                                   map: map, 
+                                                   title: 'Rappresentante' });
+             
+             var indirizzo = rappresentante.attributes["indirizzo"].textContent;
+             var regione = rappresentante.attributes["regione"].textContent;
+             var nominativo = rappresentante.attributes["nominativo"].textContent;
+             var telefono = rappresentante.attributes["telefono"].textContent;
+             var cell = rappresentante.attributes["cell"].textContent;
+             var fax = rappresentante.attributes["fax"].textContent;
+             var email = rappresentante.attributes["email"].textContent;
+
+             var infowindow = new google.maps.InfoWindow({
+                    content: '<div style="color:gray;font-size:16pt;font-weight:bold">Info rappresentante</div><ul style="text-align:left">'+
+                            '<li><b>Nominativo</b>: '+nominativo+'</li>'+
+                            '<li><b>Regione</b>: '+regione+'</li>'+
+                            '<li><b>Indirizzo</b>: '+indirizzo+'</li>'+
+                            '<li><b>Telefono</b>: '+telefono+'</li>'+
+                            '<li><b>Cellulare</b>: '+cell+'</li>'+
+                            '<li><b>Fax</b>: '+fax+'</li>'+
+                            '<li><b>Email</b>: '+email+'</li>'+
+                            '</ul>'});
+            
+             google.maps.event.addListener(marker, 'click', function() {
+                                                                 infowindow.open(map,marker);
+                                                             });
+         }else {  
+             alert("Google Maps not found address!");  
+             }  
+         });
+     
+     
+     
+
+ }
