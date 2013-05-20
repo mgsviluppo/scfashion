@@ -46,7 +46,7 @@
                                 <li style="float:left;display:inline-block"><a class="menu_link" href="#home"><div class="button_menu_out"><div class="button_menu_in"><strong>Home Page</strong></div></div></a></li>
                                 <li style="float:left;display:inline-block"><a href="#collezione"><div class="button_menu_out"><div class="button_menu_in"><a class="menu_link" href="#collezione"><strong>Collezioni</strong></div></div></a></li>
                                 <li style="float:left;display:inline-block"><a href="#contact"><div class="button_menu_out"><div class="button_menu_in"><a class="menu_link" href="#contact"><strong>Contatti</strong></div></div></a></li>
-								<li style="float:left;display:inline-block"><a href="#rivenditori"><div class="button_menu_out"><div class="button_menu_in"><a class="menu_link" href="#rivenditori"><strong>Rivenditori</strong></div></div></a></li>
+								<li style="float:left;display:inline-block"><a href="#rappresentanti"><div class="button_menu_out"><div class="button_menu_in"><a class="menu_link" href="#rappresentanti"><strong>Rappresentanti</strong></div></div></a></li>
                             </ul>
                         </div>
                     </header>
@@ -86,7 +86,7 @@
                                                         $dirs = scandir($dir);
                                                         $i = 0;
                                                         foreach($dirs as $entry){
-                                                            if($entry != '.' && $entry != '..'){
+                                                            if(strncmp($entry, '.', strlen('.'))){
                                                                 if($i > 0)
                                                                     $class = '';
                                                                 else
@@ -107,7 +107,11 @@
                                                         $id = $collection['id'];
                                                         $path = $collection['path'];
                                                         $name = $collection['name'];
-                                                        echo '<div class="tab-content" id="'.$id.'">';
+                                                
+														if(!file_exists($path.'/thumb')){
+															mkdir($path.'/thumb');
+														}
+        												echo '<div class="tab-content" id="'.$id.'">';
                                                         echo '<h2>'.$name.'</h2>';
                                                         echo '<div class="wrapper">';
                                                 
@@ -116,7 +120,6 @@
                                                         foreach($dir_photo as $photo){
                                                             if(strncmp($photo, '.', strlen('.'))){
                                                                 echo '<div class="thumb-container" style="border:7px solid white">';
-                                                        
                                                                 if(!file_exists($path.'/thumb/thumb_'.$photo)){
                                                                     $img = new SmartImage($path.'/big/'.$photo); 
                                                                     $img->resize(188, 114, true); 
@@ -165,38 +168,15 @@
                                     </div>
                                 </div></div>
                             </li>
-                            <li id="rivenditori">
+                            <li id="rappresentanti">
                                 <div class="box1_out"><div class="box1">
                                     <div class="inner">
-                                        <div class="wrapper" height="600px">
-											<h1>COMING SOON</h1>
+                                        <div style="display:block;text-align:center">
+                                            <h2>Mappa Rivenditori</h2>
+                                            <center><div id="map2" style="width:600px; height:400px"></div></center>
                                         </div>
                                     </div>
                                 </div></div>
-                            </li>
-                            <li id="page_More">
-                                <div class="box1">
-                                    <div class="inner">
-                                        <a href="#" class="close" data-type="close"><span></span></a>
-
-                                        <h2>Read more</h2>
-                                        <div class="wrapper pad_bot3">
-                                            <figure class="left marg_right1"><img src="images/page4_img1.jpg" alt=""></figure>
-                                            <p class="color1 pad_bot2"><strong>Et harum quidem rerum</strong></p>
-                                            <p>Cupiditate noprovident similique sunt in culpa qui officia deserunt mollitia animi, id est laborum et dolorum fuga. Et harum quidem rerum facilis est et expedita distinctio. Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil impedit quo minus id quod maxime placeat facere possimus, omnis voluptas.</p>
-                                        </div>
-                                        <p>At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident, similique sunt in culpa qui officia deserunt mollitia animi, id est laborum et dolorum fuga.</p>
-                                        <p>Occaecati cupiditate non provident, similique sunt in culpa qui officia deserunt mollitia animi, id est laborum et dolorum fuga.</p>
-                                        <div class="wrapper pad_bot3">
-                                            <figure class="left marg_right1"><img src="images/page4_img2.jpg" alt=""></figure>
-                                            <p class="color1 pad_bot2"><strong>Blanditiis praesentium voluptatum</strong></p>
-                                            <p>At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti iusto odio dignissimos ducimus qui atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident, similique sunt in culpa qui officia deserunt mollitia animi, id est laborum et dolorum fuga.</p>
-                                        </div>
-                                        <p>At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident, similique sunt in culpa qui officia deserunt mollitia animi, id est laborum et dolorum fuga.</p>
-                                        <p>Qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident, similique sunt in culpa qui officia deserunt mollitia animi, id est laborum et dolorum fuga.</p>
-                                        <p>Occaecati cupiditate non provident, similique sunt in culpa qui officia deserunt mollitia animi, id est laborum et dolorum fuga.</p>
-                                    </div>
-                                </div>
                             </li>
                         </ul>
                     </article>
