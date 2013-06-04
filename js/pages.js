@@ -76,6 +76,13 @@ $(window).bind('load',function() {
                     $('#content').attr('style','width:75%');
                  $(page).css({display:'block'}).find('.box1').stop().animate({height:'100%'},500, function(){
                      act=page;   
+                     if(page == '#rappresentanti' && $('body').data('map_rappresentanti') != true){
+                        initializeRappresentanti();
+                        $('body').data('map_rappresentanti',true);
+                     }else if(page == '#contact' && $('body').data('map_contatti') != true){
+                        initializeContatti();
+                        $('body').data('map_contatti',true);
+                     }
                  }); 
              })
         } else {
@@ -84,7 +91,14 @@ $(window).bind('load',function() {
                 else
                    $('#content').attr('style','width:75%');
              $(page).css({display:'block'}).find('.box1').stop().animate({height:'100%'},500, function(){
-                 act=page; 
+                 act=page;
+                 if(page == '#rappresentanti' && $('body').data('map_rappresentanti') != true){
+                    initializeRappresentanti();
+                    $('body').data('map_rappresentanti',true);
+                 }else if(page == '#contact' && $('body').data('map_contatti') != true){
+                    initializeContatti();
+                    $('body').data('map_contatti',true);
+                 }
              });     
         }
     }
@@ -100,4 +114,6 @@ $(window).bind('load',function() {
      }); 
      return false;
     }
-})
+});
+
+

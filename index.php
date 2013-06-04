@@ -3,6 +3,7 @@
     <head>
         <title>Navigare shoes - ScFashion</title>
         <meta charset="utf-8">
+		<link rel="Shortcut Icon" href="images/liferay.ico">
         <link rel="stylesheet" href="css/reset.css" type="text/css" media="all">
         <link rel="stylesheet" href="css/layout.css" type="text/css" media="all">
         <link rel="stylesheet" href="css/prettyPhoto.css" type="text/css" media="all">
@@ -14,8 +15,8 @@
         <script type="text/javascript" src="js/cufon-replace.js"></script>
         <script type="text/javascript" src="js/Ubuntu_400.font.js"></script>
         <script type="text/javascript" src="js/Ubuntu_700.font.js"></script>
-        <script type="text/javascript" src="js/pages.js"></script>
         <script type="text/javascript" src="js/script.js" ></script>
+        <script type="text/javascript" src="js/pages.js"></script>
         <script type="text/javascript" src="js/jquery.easing.1.3.js"></script>
         <script type="text/javascript" src="js/jquery.vegas.js"></script>
         <!--<script type="text/javascript" src="js/bg.js" ></script>
@@ -58,16 +59,20 @@
 									<div class="box1">
                                     	<div class="inner">
 	                                        <h2>Mission</h2>
-	                                        <p>Come testimonia il marchio rappresentato dalla vela sulle onde il mare è da sempre un elemento importante del mondo NAVIGARE. Il mare come sinonimo di tranquillità e pace, ma allo stesso tempo sportività e dinamismo. Così l'abbigliamento Navigare è destinato alle persone che amano vestire in modo elegante pur avendo a disposizione un prodotto sportivo adatto ad ogni situazione.
-
-	                                        Questo pensiero è stato trasmesso non solo all'abbigliamento maschile ma anche all' abbigliamento femminile e da bambino.
-
-	                                        Inoltre NAVIGARE ha firmato altri oggetti, per soddisfare tutti coloro che apprezzano la linea abbigliamento, desiderano crearsi un look completo Navigare, grazie a prodotti, con le stesse caratteristiche di qualità e design. Sono nati così l'intimo uomo, i profumi, la pelletteria, gli ombrelli e gli articoli in spugna.
-
-	                                        Tutto questo unito con l'amore per il mare e per il tempo libero vissuto con stile ed eleganza in ogni momento rappresenta il MONDO NAVIGARE, che da sempre non è solamente UN MODO DI VESTIRE... ma anche e sopratutto UN MODO DI ESSERE.
-
-	                                        Per entrare nel mondo Navigare, scoprite le collezioni, diventate fan di Facebook, ma allo stesso tempo inviateci le vostre opinioni e richieste di informazioni.</p>
-	                                    </div>
+											<div style='background-image:url("images/img_homepage.jpg"); float:left; background-size:188px 114px; width:188px;height:114px; margin:10px; border:3px solid #001A3D;'></div>
+	                                        <p style='line-height:7mm;'>Come testimonia il marchio rappresentato dalla vela sulle onde il mare è da sempre un elemento importante del mondo NAVIGARE. Il mare come sinonimo di 
+												tranquillità e pace, ma allo stesso tempo sportività e dinamismo. Così l'abbigliamento Navigare è destinato alle persone che amano vestire in modo 
+												elegante pur avendo a disposizione un prodotto sportivo adatto ad ogni situazione.
+	                                        	Questo pensiero è stato trasmesso non solo all'abbigliamento maschile ma anche all' abbigliamento femminile e da bambino.
+	                                        	Inoltre NAVIGARE ha firmato altri oggetti, per soddisfare tutti coloro che apprezzano la linea abbigliamento, desiderano crearsi un look completo Navigare,
+	 											grazie a prodotti, con le stesse caratteristiche di qualità e design. Sono nati così l'intimo uomo, i profumi, la pelletteria, 
+												gli ombrelli e gli articoli in spugna.
+	                                        	Tutto questo unito con l'amore per il mare e per il tempo libero vissuto con stile ed eleganza in ogni momento rappresenta il MONDO NAVIGARE, 
+												che da sempre non è solamente UN MODO DI VESTIRE... ma anche e sopratutto UN MODO DI ESSERE.</p>
+	                                    	<div class="fraseUno">NAVIGARE</div>
+											<div class="fraseDue">UN MODO DI ESSERE...</div>
+											<div class="fraseTre">UN MODO DI VIVERE...</div>
+										</div>
                                 	</div>
 								</div>
                             </li>
@@ -160,9 +165,9 @@
                                                     <a href="mailto:" class="link1">mail@stefanocannizzaro.com</a>
                                                 </p>
                                             </div>
-                                            <div style="display:block;text-align:center">
+                                            <div style="display:block;">
                                                 <h2>Mappa</h2>
-                                                <center><div id="map" style="width:600px; height:400px"></div></center>
+                                                <div id="map" style="width:700px; height:500px"></div>
                                             </div>
                                         </div>
                                     </div>
@@ -171,9 +176,10 @@
                             <li id="rappresentanti">
                                 <div class="box1_out"><div class="box1">
                                     <div class="inner">
-                                        <div style="display:block;text-align:center">
+                                        <div style="display:block;">
                                             <h2>Mappa Rivenditori</h2>
-                                            <center><div id="map2" style="width:600px; height:400px"></div></center>
+											
+                                            <div id="map2" style="width:700px; height:600px"></div>
                                         </div>
                                     </div>
                                 </div></div>
@@ -193,7 +199,7 @@
                         <a href="index.html" id="footer_logo"></a> Copyright 2013
                     </div>
                     <div class="col_2">
-                        Designed by <a rel="nofollow" href="#">MGSVILUPPO</a>
+                        <a rel="nofollow" href="#">Designed by MGSVILUPPO</a>
                         <!-- {%FOOTER_LINK} -->
                     </div>
                 </footer>
