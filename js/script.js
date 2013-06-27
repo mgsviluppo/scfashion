@@ -13,7 +13,6 @@ function initializeContatti() {
 
 function initializeRappresentanti() {
     var rappresentanti = loadRappresentanti('rappresentanti.xml');
-
     var latlng = new google.maps.LatLng(42.924252,13.425293);
     // imposta le opzioni di visualizzazione
     var options = { zoom: 6,
