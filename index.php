@@ -41,13 +41,13 @@
                 <div class="box">
 <!-- header -->
                     <header>
-                        <div id="logo" style="display:inline-block;float:left"><a href="index.html">MGSviluppo Portfolio</a></div>
+                        <div id="logo" style="display:inline-block;float:left"></div>
                         <div style="float:left;margin-top:-80px">
                             <ul id="menu">
-                                <li style="float:left;display:inline-block"><a class="menu_link" href="#home"><div class="button_menu_out"><div class="button_menu_in"><strong>Home Page</strong></div></div></a></li>
-                                <li style="float:left;display:inline-block"><a href="#collezione"><div class="button_menu_out"><div class="button_menu_in"><a class="menu_link" href="#collezione"><strong>Collezioni</strong></div></div></a></li>
-                                <li style="float:left;display:inline-block"><a href="#contact"><div class="button_menu_out"><div class="button_menu_in"><a class="menu_link" href="#contact"><strong>Contatti</strong></div></div></a></li>
-								<li style="float:left;display:inline-block"><a href="#rappresentanti"><div class="button_menu_out"><div class="button_menu_in"><a class="menu_link" href="#rappresentanti"><strong>Rappresentanti</strong></div></div></a></li>
+                                <li style="float:left;display:inline-block"><div class="button_menu_out"><div class="button_menu_in"><a class="menu_link" href="#home"><strong>Home Page</strong></div></div></a></li>
+                                <li style="float:left;display:inline-block"><div class="button_menu_out"><div class="button_menu_in"><a class="menu_link" href="#collezione"><strong>Collezioni</strong></div></div></a></li>
+                                <li style="float:left;display:inline-block"><div class="button_menu_out"><div class="button_menu_in"><a class="menu_link" href="#contact"><strong>Contatti</strong></div></div></a></li>
+								<li style="float:left;display:inline-block"><div class="button_menu_out"><div class="button_menu_in"><a class="menu_link" href="#rappresentanti"><strong>Rappresentanti</strong></div></div></a></li>
                             </ul>
                         </div>
                     </header>
@@ -196,7 +196,7 @@
 <!-- footer -->
                 <footer>
                     <div class="col_1">
-                        <a href="index.html" id="footer_logo"></a> Copyright 2013
+                        <a href="#home" id="footer_logo"></a> Copyright 2013
                     </div>
                     <div class="col_2">
                         <a rel="nofollow" href="#">Designed by MGSVILUPPO</a>
