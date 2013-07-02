@@ -122,6 +122,8 @@
                                                 
                                                         $dir_photo = scandir($path.'/big');
                                                         
+                                                        $xml_photo_description = simplexml_load_file($path."/photo_description.xml");
+                                                        $description = "";
                                                         foreach($dir_photo as $photo){
                                                             if(strncmp($photo, '.', strlen('.'))){
                                                                 echo '<div class="thumb-container" style="border:7px solid white">';
@@ -130,7 +132,18 @@
                                                                     $img->resize(188, 114, true); 
                                                                     $img->saveImage($path.'/thumb/thumb_'.$photo); 
                                                                 }
-                                                                echo '<a href="'.$path.'/big/'.$photo.'" class="lightbox-image" rel="prettyPhoto[group'.$i.']"><span></span><img src="'.$path.'/thumb/thumb_'.$photo.'" alt=""></a>';
+                                                                foreach($xml_photo_description->photo as $photo_xml){
+                                                                    $description = "";
+                                                                    $name_photo = $photo_xml->name;
+                                                                    if($name_photo != ''){
+                                                                        if($name_photo == explode('.',$photo)[0]){
+                                                                            $description = $photo_xml->description;
+                                                                            break;
+                                                                        }
+                                                                    }                                                                    
+                                                                }
+                       
+                                                                echo '<a href="'.$path.'/big/'.$photo.'" class="lightbox-image" rel="prettyPhoto[group'.$i.']" title="'.$description.'"><span></span><img src="'.$path.'/thumb/thumb_'.$photo.'" alt=""></a>';
                                                                 echo '</div>';
                                                             }
                                                         }

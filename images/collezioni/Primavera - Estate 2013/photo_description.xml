@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<photos>
+    <photo>
+        <name>photo</name>
+        <description>Questa è la prima foto</description>
+    </photo>
+    <photo>
+        <name>photo-1</name>
+        <description>Questa è la seconda foto</description>
+    </photo>
+</photos>
